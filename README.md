@@ -16,4 +16,4 @@ Sitio web **HTML, CSS, Bootstrap** para tienda de ropa **alternativa/gótica** "
 
 **Estilo:**  Oscuro, post-punk, gótico.
 
-**Autor:** [Tu Nombre] - Estudiante INACAP.
+**Autor:** Diego López Abarca - Estudiante INACAP, Sede Puente Alto.
