@@ -13,7 +13,15 @@
     <title>ModaSur - Ropa Alternativa</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="canonical" href="URL_COMPLETA_DE_ESTA_PAGINA_CUANDO_ESTE_ONLINE">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src *; style-src 'self' https://cdn.jsdelivr.net; script-src 'self'; object-src 'none'; frame-ancestors 'none';"> <!-- Content Security Policy, para evitar inyecciones de contenido o Plugins obsoletos como Flash-->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    img-src 'self' data: *;
+    style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline';
+    script-src 'self' https://code.jquery.com https://cdn.jsdelivr.net;
+    font-src 'self' https://fonts.gstatic.com;
+    object-src 'none';
+    frame-src 'self' https://www.google.com;
+    connect-src 'self' https://*.google.com https://*.googleapis.com;"> <!-- Content Security Policy, para evitar inyecciones de contenido o Plugins obsoletos como Flash-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/Styles.css">
 
@@ -42,27 +50,21 @@
                 <li class="nav-item">
                   <a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="servicios.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item">   <!-- Sin 'dropdown' -->
+                  <a class="nav-link" href="servicios.html">  <!-- Simple 'nav-link', sin atributos extra -->
                     Servicios
                   </a>
 
 
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
+                 
 
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+                  <a class="nav-link" href="contacto.html" aria-disabled="true">Contacto</a>
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
               </form>
             </div>
           </nav>
@@ -115,23 +117,11 @@
       <!-- Columna del Mapa -->
       <div class="col-md-6">
           <h2>Nuestra Ubicación</h2>
-          <p>Encuentra nuestro refugio principal en [Dirección Ficticia, ej: Calle Falsa 123, Ciudad Gótica].</p>
+          <p>Encuentra nuestro refugio principal en Av. Alameda Libertador Bernardo O'Higgins 1621, 8340557 Santiago, Región Metropolitana.</p>
           
           <!-- Mapa Embebido (Placeholder) -->
-          <div class="map-responsive" style="height: 400px; border: 1px solid #555; background-color: #333; display: flex; align-items: center; justify-content: center; color: #aaa;">
-              <!-- 
-                  INSTRUCCIÓN PARA MAPA REAL:
-                  1. Ve a Google Maps.
-                  2. Busca la dirección deseada.
-                  3. Haz clic en "Compartir".
-                  4. Selecciona la pestaña "Insertar un mapa".
-                  5. Copia el código HTML (iframe).
-                  6. PEGA ESE CÓDIGO HTML AQUÍ, REEMPLAZANDO ESTE DIV.
-                  7. Ajusta el 'width' a "100%" y el 'height' a "400" (o el que prefieras) en el iframe.
-              -->
-             <p class="text-center"><em>Aquí iría el mapa embebido de Google Maps.<br>Sigue las instrucciones en el código HTML para insertarlo.</em></p>
-          </div>
-           <p class="mt-3 text-muted"><small>Horario de atención física: [Inventa un horario, ej: Lunes a Viernes de 11:00 a 19:00]</small></p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1177.0293524381689!2d-70.66040450303493!3d-33.445620553449515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a8431f6061%3A0xca4f2d3b7408a1a0!2sKathedral%20Store%20-%20dark%20-%20Goth%20.%20STyles%20alternativo!5e0!3m2!1ses-419!2scl!4v1744224496450!5m2!1ses-419!2scl" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <p class="mt-3 text-muted"><small>Horario de atención física: Lunes a Viernes de 11:00 a 19:00</small></p>
       </div>
 
   </div> <!-- Fin de la Fila -->
