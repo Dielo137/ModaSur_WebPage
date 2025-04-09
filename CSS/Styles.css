@@ -1,4 +1,65 @@
-      
+       
+
+/* --- TEMA OSCURO BASE --- */
+
+body {
+    background-color: #121212; /* Negro no tan absoluto */
+    color: #ffffff; /* Texto blanco para contraste */
+    font-family: sans-serif; /* Fuente básica, ¡cámbiala si quieres! */
+}
+
+/* --- NAVBAR OSCURO --- */
+.navbar {
+    background-color: #212121; /* Un poco más claro que el body */
+    border-bottom: 1px solid #333; /* Línea separadora sutil */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #f8f9fa !important; /* Blanco casi puro para links y logo */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e0e0e0 !important; /* Grisáceo al pasar el mouse */
+}
+
+.navbar-toggler-icon {
+    background-color: #f8f9fa; /* Icono del botón hamburguesa en blanco */
+}
+
+.form-control {
+    background-color: #333; /* Fondo oscuro para el input de búsqueda */
+    color: #fff; /* Texto blanco en el input */
+    border: 1px solid #555; /* Borde sutil */
+}
+
+.btn-outline-success {
+    color: #f8f9fa; /* Texto blanco para botón Search */
+    border-color: #555; /* Borde grisáceo */
+}
+
+.btn-outline-success:hover {
+    background-color: #555; /* Fondo grisáceo al pasar el mouse */
+    color: #fff;
+    border-color: #555;
+}
+
+
+/* --- FOOTER OSCURO --- */
+footer {
+    background-color: #212121; /* Igual que el navbar para consistencia */
+    color: #ccc;
+    padding: 20px 0;
+    border-top: 1px solid #333; /* Línea separadora arriba */
+}
+
+hr { /* Línea horizontal en el footer */
+    border-color: #555;
+}
+
+/* --- FIN TEMA OSCURO --- */
+
+
 /* --- CSS para Limitar Altura del Carousel --- */
 .carousel-inner {
     height: 400px; 
@@ -16,4 +77,3 @@
 }
 /* --- Fin CSS Carousel --- */
 
-    
