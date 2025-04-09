@@ -251,7 +251,7 @@ hr { /* Línea horizontal (en footer y otros) */
 /* --- MAPA (Estilo para el contenedor si usas el placeholder) --- */
 .map-responsive {
     overflow: hidden;
-    padding-bottom: 75%; /* Aspect ratio (ajusta si es necesario) */
+    padding-bottom: 75%; /* Aspect ratio  */
     position: relative;
     height: 0;
     border: 1px solid #333;
