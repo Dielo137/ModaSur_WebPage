@@ -69,6 +69,76 @@
 
     </header>
 
+          
+<main class="container mt-5 mb-5">
+
+  <div class="row">
+      <div class="col-12 text-center mb-4">
+          <h1 class="display-4">Conéctate con la Oscuridad</h1>
+          <p class="lead">Envíanos tus señales o encuéntranos en el mapa.</p>
+          <hr style="border-top: 1px solid #555;">
+      </div>
+  </div>
+
+  <div class="row">
+
+      <!-- Columna del Formulario -->
+      <div class="col-md-6 mb-4 mb-md-0"> <!-- Añade margen inferior en móviles -->
+          <h2>Formulario de Contacto</h2>
+          <form action="#" method="POST"> <!-- Cambia action="#" a tu endpoint de backend si tuvieras uno -->
+              
+              <div class="form-group">
+                  <label for="nombre">Tu Nombre:</label>
+                  <input type="text" class="form-control bg-secondary text-white border-dark" id="nombre" name="nombre" required placeholder="Escribe tu nombre"> 
+              </div>
+
+              <div class="form-group">
+                  <label for="email">Tu Email:</label>
+                  <input type="email" class="form-control bg-secondary text-white border-dark" id="email" name="email" required placeholder="tu.correo@ejemplo.com">
+              </div>
+
+              <div class="form-group">
+                  <label for="asunto">Asunto:</label>
+                  <input type="text" class="form-control bg-secondary text-white border-dark" id="asunto" name="asunto" placeholder="Motivo de tu contacto">
+              </div>
+
+              <div class="form-group">
+                  <label for="mensaje">Tu Mensaje:</label>
+                  <textarea class="form-control bg-secondary text-white border-dark" id="mensaje" name="mensaje" rows="5" required placeholder="Escribe aquí tu consulta..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-outline-light btn-block">Enviar Mensaje</button>
+
+          </form>
+      </div>
+
+      <!-- Columna del Mapa -->
+      <div class="col-md-6">
+          <h2>Nuestra Ubicación</h2>
+          <p>Encuentra nuestro refugio principal en [Dirección Ficticia, ej: Calle Falsa 123, Ciudad Gótica].</p>
+          
+          <!-- Mapa Embebido (Placeholder) -->
+          <div class="map-responsive" style="height: 400px; border: 1px solid #555; background-color: #333; display: flex; align-items: center; justify-content: center; color: #aaa;">
+              <!-- 
+                  INSTRUCCIÓN PARA MAPA REAL:
+                  1. Ve a Google Maps.
+                  2. Busca la dirección deseada.
+                  3. Haz clic en "Compartir".
+                  4. Selecciona la pestaña "Insertar un mapa".
+                  5. Copia el código HTML (iframe).
+                  6. PEGA ESE CÓDIGO HTML AQUÍ, REEMPLAZANDO ESTE DIV.
+                  7. Ajusta el 'width' a "100%" y el 'height' a "400" (o el que prefieras) en el iframe.
+              -->
+             <p class="text-center"><em>Aquí iría el mapa embebido de Google Maps.<br>Sigue las instrucciones en el código HTML para insertarlo.</em></p>
+          </div>
+           <p class="mt-3 text-muted"><small>Horario de atención física: [Inventa un horario, ej: Lunes a Viernes de 11:00 a 19:00]</small></p>
+      </div>
+
+  </div> <!-- Fin de la Fila -->
+
+</main>
+
+  
 
     <footer>
 
