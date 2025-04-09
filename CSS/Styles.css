@@ -1,0 +1,19 @@
+      
+/* --- CSS para Limitar Altura del Carousel --- */
+.carousel-inner {
+    height: 400px; 
+    overflow: hidden; /* Opcional: asegura que nada se salga */
+}
+
+.carousel-item img {
+    /* Se uso contain en vez de cover porque centra la imagen, si no se expande mucho*/
+    object-fit: contain; 
+    height: 100%; 
+}
+
+.carousel-item {
+   height: 100%; /* Asegura que el item llene la altura del .carousel-inner */
+}
+/* --- Fin CSS Carousel --- */
+
+    
