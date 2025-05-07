@@ -11,19 +11,19 @@
     <meta name="keywords" content="Ropa alternativa, Moda Underground, Ropa Oscura, Ropa Femenina">
     <meta name="author" content="Diego López">
     <title>ModaSur - Ropa Alternativa</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
     <link rel="canonical" href="URL_COMPLETA_DE_ESTA_PAGINA_CUANDO_ESTE_ONLINE">
     <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
     img-src 'self' data: *;
     style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline';
-    script-src 'self' https://code.jquery.com https://cdn.jsdelivr.net;
+    script-src 'self' https://code.jquery.com https://cdn.jsdelivr.net; https://cdn.jsdelivr.net js/contact-form.js;
     font-src 'self' https://fonts.gstatic.com;
     object-src 'none';
     frame-src 'self' https://www.google.com;
     connect-src 'self' https://*.google.com https://*.googleapis.com;"> <!-- Content Security Policy, para evitar inyecciones de contenido o Plugins obsoletos como Flash-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/Styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
@@ -36,7 +36,7 @@
     <header>
         <!-- Navbar (La barra en la parte superior de la pagina), con sus dropdown-menu,-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html"><img src="img/ModaSurLogo.png" alt="Logo ModaSur" height="40"></a>
+            <a class="navbar-brand" href="indice.html"><img src="img/modasurlogo.png" alt="Logo ModaSur" height="40"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,10 +45,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="indice.html">Inicio<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="sobre_nosotros.html">Sobre Nosotros</a>
+                  <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
                 </li>
                 <li class="nav-item">   <!-- Sin 'dropdown' -->
                   <a class="nav-link" href="servicios.html">  <!-- Simple 'nav-link', sin atributos extra -->
@@ -62,10 +62,6 @@
                   <a class="nav-link" href="contacto.html" aria-disabled="true">Contacto</a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-              </form>
             </div>
           </nav>
 
@@ -87,7 +83,7 @@
       <!-- Columna del Formulario -->
       <div class="col-md-6 mb-4 mb-md-0"> <!-- Añade margen inferior en móviles -->
           <h2>Formulario de Contacto</h2>
-          <form action="#" method="POST"> 
+          <form id="contactForm" action="#" method="POST">
               
               <div class="form-group">
                   <label for="nombre">Tu Nombre:</label>
@@ -110,7 +106,7 @@
               </div>
 
               <button type="submit" class="btn btn-outline-light btn-block">Enviar Mensaje</button>
-
+              <div id="formMessages" class="mt-3"></div>
           </form>
       </div>
 
@@ -148,6 +144,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="js/contact-form.js"></script>
+
     <!-- === FIN SCRIPTS === -->
 
 </body>
